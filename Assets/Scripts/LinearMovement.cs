@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class LinearMovement : MonoBehaviour
 {
-    public Transform start;
-    public Transform end;
-    public float t=0;
-    public float a;
+    //make object move linearly though two point in one derection
+    public Transform start; //object starting movement position
+    public Transform end; //end position
+    public float d=0; // the distance traveled (0 -> 1)
+    public float s; //speed
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -16,15 +17,14 @@ public class LinearMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //t += Time.deltaTime;
-
-        //t=t+(float)0.0001;
-        t = t + a;
+        //going distance
+        d = d + s;
         
-        if (t > 1)
+        if (d > 1)//when object reach the end, refresh it to the start point
         {
-            t = 0;
+            d = 0;
         }
-        transform.position = Vector2.Lerp(start.position, end.position, t);
+        // make the movement
+        transform.position = Vector2.Lerp(start.position, end.position, d);
     }
 }

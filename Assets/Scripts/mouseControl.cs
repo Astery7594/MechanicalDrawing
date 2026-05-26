@@ -12,6 +12,7 @@ public class mouseControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // let the object follow mouse position move
         Vector2 mP = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         transform.position = mP;
     }

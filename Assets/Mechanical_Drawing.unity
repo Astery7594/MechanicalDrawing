@@ -885,7 +885,7 @@ MonoBehaviour:
   start: {fileID: 403614033}
   end: {fileID: 719575933}
   t: 0
-  a: 0.0025
+  s: 0.0025
 --- !u!1 &601898028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1449,7 +1449,7 @@ MonoBehaviour:
   start: {fileID: 1042298154}
   end: {fileID: 1771965532}
   t: 0
-  a: 0.0001
+  s: 0
 --- !u!1 &1169155381
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,7 +1987,7 @@ MonoBehaviour:
   start: {fileID: 1519757436}
   end: {fileID: 1027737960}
   t: 0
-  a: 0.002
+  s: 0.003
 --- !u!114 &1608009846
 MonoBehaviour:
   m_ObjectHideFlags: 0
